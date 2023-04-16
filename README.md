@@ -41,6 +41,7 @@ All materials of the course will be provided in this repository.
 
 
 ## Useful resources
+- Class materials: [OneDrive](https://husteduvn-my.sharepoint.com/:f:/g/personal/viet_nq194881_sis_hust_edu_vn/Em4cyOeXppJGgRySdZTFREEB2YtNSmVWpQKWFbs8rdH8GQ?e=MhQ48Z)
 - Website for sharpening your coding skills:
     - [Luyện Code](https://luyencode.net/)
     - [w3schools](https://www.w3schools.com/)
