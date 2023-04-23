@@ -1,0 +1,87 @@
+# Bài 1
+username = input("Input your name:")
+print("Welcome,",username,"!")
+
+# Bài 2
+fisrt_name = input("Fisrt name:")
+last_name = input("Last name:")
+phone_number = input("Phone number:")
+print("Your registered name is:",fisrt_name,last_name)
+print("Your phone number is:",phone_number)
+
+# Bài 3
+print("Name\t\t:\tLâm\nBirthday\t:\t09/09/2006")
+
+# Bài 4
+year = input("What year is it?\n")
+print("HAPPY NEW YEAR\n !!!",year,"!!!")
+
+# Bài 5
+import turtle
+turtle.right(60)
+turtle.forward(100)
+turtle.right(120)
+turtle.forward(100)
+turtle.right(120)
+turtle.forward(100)
+turtle.right(120)
+turtle.forward(100)
+turtle.right(120)
+turtle.forward(50)
+turtle.right(90)
+
+# Bài 6
+import turtle
+turtle.forward(100)
+turtle.right(90)
+turtle.forward(100)
+turtle.right(90)
+turtle.forward(100)
+turtle.right(90)
+turtle.forward(100)
+turtle.penup()
+turtle.pensize(5)
+turtle.forward(20)
+turtle.pendown()
+turtle.right(90)
+turtle.forward(120)
+turtle.right(90)
+turtle.forward(140)
+turtle.right(90)
+turtle.forward(140)
+turtle.right(90)
+turtle.forward(140)
+turtle.right(90)
+turtle.forward(70)
+turtle.right(90)
+turtle.penup()
+turtle.forward(70)
+turtle.right(180)
+
+# Bài 7
+import turtle
+turtle.speed(2)
+turtle.forward(100)
+turtle.right(90)
+turtle.forward(100)
+turtle.right(90)
+turtle.forward(100)
+turtle.right(90)
+turtle.forward(100)
+turtle.penup()
+turtle.forward(20)
+turtle.right(90)
+turtle.forward(50)
+turtle.right(45)
+turtle.pendown()
+turtle.forward(100)
+turtle.right(90)
+turtle.forward(100)
+turtle.right(90)
+turtle.forward(100)
+turtle.right(90)
+turtle.forward(100)
+turtle.right(135)
+turtle.penup()
+turtle.forward(70)
+turtle.right(180)
