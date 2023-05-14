@@ -1,7 +1,7 @@
 import math
 #BT1:
 rNum = int(input(">> "))
-if rNum % 4 == 0:
+if rNum % 2 == 0:
     print(f"{rNum} is even")
 else:
     print(f"{rNum} is odd")
