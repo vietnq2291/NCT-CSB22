@@ -33,7 +33,7 @@ BÀI 5
 print("Welcome to The Ultimate Sercurity System")
 a = input("Username: ")
 b = input("Password: ")
-if a == " admin" and b ==123456:
+if a == "admin" and b == "123456":
     print("You are logged in, admin.")
 else:
     print("Wrong username or password.")
