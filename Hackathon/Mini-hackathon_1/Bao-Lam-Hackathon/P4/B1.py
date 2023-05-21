@@ -1,0 +1,5 @@
+print("== Registration ==")
+u = input("Username: ")
+p = input("Password: ")
+e = input("Email: ")
+print("Registered successfully.")
