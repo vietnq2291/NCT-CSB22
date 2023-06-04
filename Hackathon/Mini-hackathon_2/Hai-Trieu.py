@@ -63,7 +63,7 @@ sum_num = sum(list_numbers)
 print("Sum of numbers in list:", sum_num)
 
 
-#---------#
+#Phần 4
 numbers = int(input("Input the amount of number: "))
 list_numbers = []
 for i in range(numbers):
@@ -72,3 +72,28 @@ for i in range(numbers):
 for number in list_numbers:
     if number % 2 == 0:
         print("Even numbers:", number)
+
+#Phần 5:
+quan_in4 = {
+    'BĐ': {'area': 9.224, "population": 247100},
+    'BTL': {'area': 43.35, "population": 333300},
+    'CG': {'area': 12.04, "population": 266800},
+    'ĐĐ': {'area': 9.96, "population": 420900},
+    'HBT': {'area': 10.09, "population": 318000},
+}
+list_quan = []
+population = []
+for cacquan, in4 in quan_in4.items():
+    list_quan.append(cacquan)
+    population.append(in4['population'])
+print("Danh sách các quận của quận: ", list_quan)
+print("Danh sách dân số của các quận: ", population)
+highest_ppl_thutu = population.index(max(population))
+lowest_ppl_thutu = population.index(min(population))
+print("-Về dân cư:")
+print("Số thứ tự của",list_quan[highest_ppl_thutu], "nơi có số dân cao nhất:", highest_ppl_thutu)
+print("Số thứ tự của",list_quan[lowest_ppl_thutu], "nơi có số dân thấp nhất:", lowest_ppl_thutu)
+
+
+
+
