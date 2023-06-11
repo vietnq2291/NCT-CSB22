@@ -96,4 +96,38 @@ print("Số thứ tự của",list_quan[lowest_ppl_thutu], "nơi có số dân t
 
 
 
+#Phần 6:
+city_in4 = {
+    'BĐ': {'area': 9.224, 'population': 247100},
+    'BTL': {'area': 43.35, 'population': 333300},
+    'CG': {'area': 12.04, 'population': 266800},
+    'ĐĐ': {'area': 9.96, 'population': 420900},
+    'HBT': {'area': 10.09, 'population': 318000}
+}
+
+list_matdods = []
+tong_matdods = 0
+for cacquan, in4 in city_in4.items():
+    matdods = in4['population'] / in4['area']
+    list_matdods.append(matdods)
+
+    tong_matdods += city_in4[cacquan]['population'] / city_in4[cacquan]['area']
+
+soluong_quan = len(city_in4)
+trungbinh_matdods = tong_matdods / soluong_quan
+
+print("Danh sách mật độ dân số của các quận:", list_matdods)
+print("Mật độ dân số trung bình của các quận là:", trungbinh_matdods)
+
+#Phần 7+8: 
+high_scores = [78, 56, 67, 89, 73]
+new_score = int(input("Nhập điểm mới của bạn: "))
+high_scores.append(new_score)
+high_scores.sort(reverse=True)
+top5_scores = high_scores[0:5]
+for score in top5_scores:
+    print( score)
+
+
+
 
