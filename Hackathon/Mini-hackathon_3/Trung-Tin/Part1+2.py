@@ -1,3 +1,31 @@
+
+#Part 1: 
+def evenNum(num):
+    if num%2==0:
+        print("This number is even.")
+        return True
+    else:
+        print("This number is not even.")
+        return False
+
+uInput1 = int(input("Input a number: "))
+
+def cal_area(r):
+    area = ((3.14)*(r**2))
+    print(f"Circle's area: {area}")
+cal_area(1)
+
+def reverse_str(uStr):
+    reversedStr = uStr[::-1]
+    print(reversedStr)
+reverse_str("mindX")
+
+def is_palindrom(uStr):
+    if uStr == uStr[::-1]:
+        print("This is a palindrome.")
+
+is_palindrom("anna")
+
 #Part 2:
 def calc(num):
     base = 1
@@ -36,30 +64,3 @@ def print_fibo(n):
     print(res)
 print_fibo(5)
 
-
-#Part 1: 
-def evenNum(num):
-    if num%2==0:
-        print("This number is even.")
-        return True
-    else:
-        print("This number is not even.")
-        return False
-
-uInput1 = int(input("Input a number: "))
-
-def cal_area(r):
-    area = ((3.14)*(r**2))
-    print(f"Circle's area: {area}")
-cal_area(1)
-
-def reverse_str(uStr):
-    reversedStr = uStr[::-1]
-    print(reversedStr)
-reverse_str("mindX")
-
-def is_palindrom(uStr):
-    if uStr == uStr[::-1]:
-        print("This is a palindrome.")
-
-is_palindrom("anna")
