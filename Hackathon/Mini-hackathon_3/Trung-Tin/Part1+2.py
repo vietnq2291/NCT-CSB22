@@ -1,36 +1,40 @@
-iList = [5, 1, 8, 92, -1, 30]
-
-for x in range(len(iList)):
-    for y in range(x+1, len(iList)):
-        if iList[x] > iList[y]:
-            iList[x] = iList[y]
-print(iList)
-
-
 #Part 2:
-def print_fibo(n):
-    count = 0
-    base = 0
-    n1 = 1
-    n2 = 1
-    if n > 0: 
-        while count < n:
-            base = n1 
-            n1 = n2 
-            n2 = base + n1
-            print(n2)
-            count += 1
-print_fibo(5)
-
-
-
 def calc(num):
     base = 1
     for x in range(1, num+1):
         base *= x
     print(f"{num}! = {base}")
-
 calc(5)
+
+numList = [5, 1, 8, 92, -1, 30]
+def sortList(uList):
+    count = 0
+    sortedList = []
+    while uList:
+        min = uList[0]  
+        for x in uList: 
+            if x < min:
+                min = x
+        sortedList.append(min)
+        uList.remove(min)    
+        count += 1
+    print(sortedList)
+sortList(numList)
+
+def print_fibo(n):
+    count = 0
+    n1 = 0
+    n2 = 1
+    res = ""
+    if n > 0: 
+        while count < n:
+            n3 = n1 + n2
+            n1 = n2 
+            n2 = n3
+            res += f" {str(n3)}"
+            count += 1
+    print(res)
+print_fibo(5)
 
 
 #Part 1: 
