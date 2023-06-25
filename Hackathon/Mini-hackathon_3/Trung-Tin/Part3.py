@@ -56,16 +56,21 @@ def escape():
             if ch == "s":
                 if currentRow == 3:
                     mapList[currentRow].pop(currentPos)
-                    mapList[currentRow].insert(currentPos, "-")
-                    mapList[0].insert(currentPos, "P")
+                    mapList[currentRow].insert(currentPos, "P")
                 else:
                     mapList[currentRow].pop(currentPos)
+                    mapList[currentRow].insert(currentPos, "-")
+                    mapList[currentRow+1].pop(currentPos)
                     mapList[currentRow+1].insert(currentPos, "P")
                     initMap()
             
             if ch == "a":
-                mapList[currentRow].pop(currentPos)
-                mapList[currentRow].insert(currentPos-1, "P")
+                if currentPos == 0:
+                    mapList[currentRow].pop(currentPos)
+                    mapList[currentRow].insert(0, "P")
+                else: 
+                    mapList[currentRow].pop(currentPos)
+                    mapList[currentRow].insert(currentPos-1, "P")
                 initMap()
             if ch == "d":
                 mapList[currentRow].pop(currentPos)
