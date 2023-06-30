@@ -72,9 +72,9 @@ for group in names.keys():
 uInput3 = input("Input sequence: ")
 newDict2 = {}
 process = []
-for letterorword in uInput3:
-    process.append(letterorword)
+for char in uInput3:
+    process.append(char)
 for item in process:
     instances = process.count(item)
     newDict2[item] = instances
-print(newDict2)
+print(f"Frequency of characters:\n", newDict2)
