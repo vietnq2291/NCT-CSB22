@@ -1,5 +1,6 @@
 import random
 #BT1: 
+print("BT1: ")
 reserved = {
     "HP": 20, 
     "DELL": 50, 
@@ -15,6 +16,7 @@ else:
     print("Not found.")
 
 #BT2: 
+print("\nBT2")
 reserved["TOSHIBA"] = 10
 print("Available products: ")
 for item in reserved.keys():
@@ -46,7 +48,7 @@ print(f"Total products: {base}")
 
 
 #BT3: 
-
+print("\nBT3")
 prices = {
     "HP": 600,
     "DELL": 650,
@@ -59,6 +61,7 @@ cInput4 = input("Input a brand: ")
 print(f"Price of {cInput4}: {prices[cInput4]}")
 
 #BT4: 
+print("\nBT4")
 reserved3 = {
     "HP": 20, 
     "DELL": 50, 
@@ -81,6 +84,7 @@ for item in reserved3.keys():
     print(f"- {item}: {reserved3[item]}")
 
 #BT5: 
+print("\nBT5")
 reserved4 = {
     "HP": 20, 
     "DELL": 50, 
@@ -88,7 +92,7 @@ reserved4 = {
     "ASUS": 30
 }
 for item in reserved4.keys():
-    reserved3[item] = reserved4[item]*prices[item]
+    reserved4[item] = reserved4[item]*prices[item]
 
 print("Available products: ")
 for brand in reserved4.keys():
@@ -100,11 +104,8 @@ for item in reserved4.items():
 print(f"Total value of available items: {base2}")
 
 
-
-
-
-
 #BT6: 
+print("\nBT6")
 character = {
     "Name": "Light", 
     "Age": 17, 
@@ -122,7 +123,7 @@ character["Backpack"].append("FlintStone")
 
 itemList = ""
 for item in character['Backpack']:
-    itemList += f"{item} "
+    itemList += f" {item}"
 print(f"Backpack: {itemList}.")
 
 #BT7: 
